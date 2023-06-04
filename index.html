@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foodŁo - żarcie spakowane w pudło</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/ce0cf785ef.js" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <!-- HERO IMAGE -->
+    <section class="hero-image animate-section" id="home">
+        <div class="hero-text w-100">
+            <h1 class="animate__animated animate__fast" data-animation="animate__fadeInDown">foodŁo</h1>
+            <p class="mt-md-4 mt-lg-5 animate__animated animate__delay-1s" data-animation="animate__backInDown">
+                <i class="fa-solid fa-bowl-rice"></i> żarcie spakowane w pudło <i class="fa-solid fa-dumbbell"></i>
+            </p>
+
+        </div>
+        <a href="#aboutus" class="btn hero-btn"><i class="fa-solid fa-arrow-down fa-bounce"></i></a>
+    </section>
+
+    <!-- NAWIGACJA -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark-subtle px-5 sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home">foodŁo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active px-lg-3" aria-current="page" href="#aboutus">O nas</a>
+                    <a class="nav-link px-lg-3" href="#offer">Oferta</a>
+                    <a class="nav-link px-lg-3" href="#prices">Cennik</a>
+                    <a class="nav-link px-lg-3" href="#contact">Kontakt</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- O NAS -->
+    <section id="aboutus" class="aboutus py-3 px-5 bg-gradient-down animate-section">
+        <h2 class="animate__animated animate__slow" data-animation="animate__fadeIn">O nas</h2>
+        <div class="container">
+            <div class="row py-2">
+                <div class="aboutus-img col"></div>
+                <div class="aboutus-box p-5 text-center col">
+                    <div class="aboutus-text animate__animated" data-animation="animate__bounceIn">
+                        <p class="aboutus-text-highlight">5 wyjątkowych foodeŁ na cały dzień!</p>
+                        <p>chcesz by SADŁO SPADŁO? jedz nasze JADŁO!</p>
+                        <p><span class="aboutus-text-highlight">foodŁo </span>- zamów PUDŁO, ZRÓB TO, ażeby SCHUDNĄĆ!
+                        </p>
+                    </div>
+                    <div
+                        class="aboutus-textbox d-flex p-5 mt-5 justify-content-between align-items-center bg-dark-subtle">
+
+                        <i class="fa-solid fa-egg p-2 animate__animated px-lg-2" data-animation="animate__fadeIn"></i>
+                        <i class="fa-solid fa-jar-wheat p-2 animate__animated px-lg-2"
+                            data-animation="animate__fadeIn"></i>
+                        <i class="fa-solid fa-drumstick-bite p-2 animate__animated px-lg-2"
+                            data-animation="animate__fadeIn"></i>
+                        <i class="fa-solid fa-fish p-2 animate__animated px-lg-2" data-animation="animate__fadeIn"></i>
+                        <i class="fa-solid fa-cheese p-2 animate__animated mb-3 mb-md-1 px-lg-2"
+                            data-animation="animate__fadeIn"></i>
+
+                        <a href="#offer" class="p-2"><button type="button"
+                                class="btn btn-outline-success aboutus-btn py-3 animate__animated"
+                                data-animation="animate__bounceIn">Pokaż
+                                <span class="aboutus-text-highlight">foodŁa</span></button></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aboutus-bottom py-5"><a href="#offer" class="btn"><i
+                    class="fa-solid fa-arrow-down fa-bounce text-center"></i></a></div>
+    </section>
+
+    <!-- OFERTA -->
+    <section id="offer" class="aboutus offer py-3 px-5 bg-gradient-up animate-section">
+        <h2 class="animate__animated animate__slow" data-animation="animate__fadeIn">Nasze foodŁa</h2>
+        <div class="container py-3">
+            <div class="row">
+
+                <!-- KARUZELA -->
+                <div class="col-12 col-lg-8 h-100">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel"
+                        data-bs-interval="3000">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/foodlo1.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption carousel-caption-shadow d-none d-md-block">
+                                    <h5>Jajoza</h5>
+                                    <p>Jajecznica z 4 wiejskich jajek smażona na maśle, z dodatkiem cebuli boczku i
+                                        szczypioru</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/foodlo2.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption carousel-caption-shadow d-none d-md-block">
+                                    <h5>Foodsianka</h5>
+                                    <p>Owsianka w słoiku na mleku i mleku migdałowym z odżywką białkową, bananem,
+                                        borówkami, żurawinami, nasionami chia, ekstraktem waniliowym, orzechami
+                                        laskowymi, migdałami</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/foodlo3.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption carousel-caption-shadow2 d-none d-md-block">
+                                    <h5>Kurakos</h5>
+                                    <p>Klasyczny kulturystyczny kurczak, ryż oraz brokuły, kalafiory, cukinie, i ostre
+                                        sosiwo wariacie</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/foodlo4.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption carousel-caption-shadow d-none d-md-block">
+                                    <h5>Ryboza</h5>
+                                    <p>Makrela w sosie własnym z chlebem proteinowym z pomidorem</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/foodlo5.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption carousel-caption-shadow d-none d-md-block">
+                                    <h5>NabiaŁkoza</h5>
+                                    <p>Białko + białko z dodatkiem czystego białeczka.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- RAMKA Z OPISEM -->
+                <div class="col-12 col-lg-4">
+                    <div class="aboutus-box p-5 p-lg-4 h-100">
+                        <div class="aboutus-text animate__animated animate__slow" data-animation="animate__bounceIn">
+                            <p class="aboutus-text-highlight p-2 p-xl-3 pb-xl-1">5 wyjątkowych foodeŁ na cały dzień!</p>
+                            <p><i class="fa-solid fa-egg p-2 mt-xxl-1"></i> Jajoza</p>
+                            <p><i class="fa-solid fa-jar-wheat p-2"></i> Foodsianka</p>
+                            <p><i class="fa-solid fa-drumstick-bite p-2"></i> Kurakos</p>
+                            <p><i class="fa-solid fa-fish p-2"></i> Ryboza</p>
+                            <p><i class="fa-solid fa-cheese p-2"></i> NabiaŁkoza</p>
+                        </div>
+                        <a href="#prices"><button type="button"
+                                class="btn btn-outline-success aboutus-btn px-3 py-3 m-3 m-xl-2 m-xxl-3 animate__animated animate__slow"
+                                data-animation="animate__bounceIn">Pokaż
+                                ceny</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CENNIK - KARTY -->
+    <section id="prices" class="prices py-3 px-5 bg-gradient-down animate-section">
+        <h2 class="animate__animated animate__slow" data-animation="animate__fadeIn">Cennik</h2>
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="card p-3 m-4 m-xl-3 h-auto col-12 col-xl-4 animate__animated"
+                    data-animation="animate__flipInX">
+                    <img src="img/box1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title p-3">Jedno foodŁo</h3>
+                        <p class="card-text p-2 pb-0 h-25">Dowolnie wybrane pudło</p>
+                        <p class="card-price p-2 pt-0">30 zł</p>
+                        <a href="#contact" class="btn card-btn px-4 py-3 m-1 mb-5 mb-xl-3 btn-outline-success">zamów</a>
+                    </div>
+                </div>
+                <div class="card p-3 m-4 m-xl-3 h-auto col-12 col-xl-4 animate__animated animate__delay-1s"
+                    data-animation="animate__flipInX">
+                    <img src="img/box5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title py-3 px-sm-5">Pięć foodeŁ</h3>
+                        <p class="card-text p-2 pb-0 h-25">Zestaw na cały dzień składający się z każdego pudła</p>
+                        <p class="card-price p-2 pt-0">100 zł</p>
+                        <a href="#contact" class="btn card-btn px-4 py-3 m-1 mb-5 mb-xl-3 btn-outline-success">zamów</a>
+                    </div>
+                </div>
+                <div class="card p-3 m-4 m-xl-3 h-auto col-12 col-xl-4 animate__animated animate__delay-2s"
+                    data-animation="animate__flipInX">
+                    <img src="img/box10.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title p-3">Dycha foodŁa</h3>
+                        <p class="card-text p-2 pb-0 h-25">Promocyjny zestaw na 2 dni po 5 foodeŁ</p>
+                        <p class="card-price p-2 pt-0">180 zł</p>
+                        <a href="#contact" class="btn card-btn px-4 py-3 m-1 mb-5 mb-xl-3 btn-outline-success">zamów</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAKT - FORMULARZ -->
+    <section id="contact" class="contact py-3 px-5 bg-gradient-up-subtle animate-section">
+        <h2 class="animate__animated animate__slow" data-animation="animate__fadeIn">Kontakt</h2>
+        <div class="container box-contact my-4 bg-dark-subtle animate__animated animate__slower"
+            data-animation="animate__fadeIn">
+            <div class="row">
+
+                <div class="box-adress p-5 pb-0 pe-lg-2 pe-xl-3 col-lg-3">
+                    <h3 class="pb-2 pb-xxl-3">Adres:</h3>
+                    <p>ul. Nowa 1/2</p>
+                    <p>87-400 &nbsp;Nibylandia</p>
+                    <p><i class="fa-solid fa-phone"></i>&nbsp; 987-654-321</p>
+                    <p><i class="fa-solid fa-at"></i>&nbsp; foodlo@eat.it</p>
+                </div>
+
+                <div class="box-form p-5 col-lg-9">
+                    <form>
+                        <div class="row">
+                            <div class="mb-3 col-12 col-md-6">
+                                <label for="formGroupExampleInput" class="form-label">Imię i nazwisko:</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput"
+                                    placeholder="wpisz swoje imię i nazwisko">
+                            </div>
+                            <div class="mb-3 col-12 col-md-6">
+                                <label for="formGroupExampleInput2" class="form-label">Adres mailowy:</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2"
+                                    placeholder="podaj swój adres mailowy">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Select" class="form-label">Wybierz temat:</label>
+                            <select class="form-select" aria-label="Default select example" id="Select">
+                                <option selected>Zamówienie</option>
+                                <option value="1">Pytania</option>
+                                <option value="2">Sugestie</option>
+                                <option value="3">Reklamacje</option>
+                                <option value="4">Inne</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Treść wiadomości:</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"
+                                placeholder="wpisz treść ..."></textarea>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STOPKA -->
+    <footer class="footer text-center py-3 bg-dark-subtle animate-section">
+        <div class="animate__animated animate__slower animate__delay-1s" data-animation="animate__fadeIn">
+            <a class="navbar-brand" href="#home">foodŁo <span>2023 r.</span></a>
+        </div>
+    </footer>
+
+    <!-- BOOTSTRAP BUNDLE -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!-- BOOTSTRAP SCROLLSPY -->
+    <script>
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: "#navbarNavAltMarkup",
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,784 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding: 98px;
+}
+
+body {
+	position: relative;
+	font-family: "Kaushan Script", cursive;
+	font-size: 62.5%;
+}
+
+/* --- DRUGA CZCIONKA --- */
+
+.aboutus,
+.prices h2,
+.contact h2,
+.card-text,
+.card-price,
+.contact,
+.footer span {
+	font-family: "Lato", sans-serif;
+}
+
+/* --- TYTUŁY SEKCJI --- */
+
+.aboutus h2,
+.offer h2,
+.prices h2,
+.contact h2 {
+	font-size: 5rem;
+	color: #111;
+	text-shadow: 4px 4px 6px #fff;
+}
+
+section h2 {
+	transition: color 0.5s, text-shadow 0.5s;
+}
+section h2:hover {
+	color: #000;
+	text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
+}
+
+/* --- OBRAMOWANIE --- */
+
+.aboutus-img,
+.aboutus-box,
+.aboutus-textbox,
+.carousel,
+.card,
+.box-contact {
+	box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+	border: 1px solid #333;
+}
+
+.box-contact {
+	box-shadow: 4px 4px 12px 0px rgba(66, 68, 90, 1);
+	border: 1px solid #333;
+}
+
+.box-contact input,
+.box-contact select,
+.box-contact textarea,
+button.navbar-toggler {
+	box-shadow: 2px 2px 6px 0px rgba(66, 68, 90, 1);
+	border: 0.5px solid #333;
+}
+
+.box-contact input,
+.box-contact select,
+.box-contact textarea,
+.form-control {
+	transition: border-color 0.5s, box-shadow 0.5s;
+}
+
+.box-contact input:focus,
+.box-contact input:hover,
+.box-contact input:active,
+.box-contact select:focus,
+.box-contact select:hover,
+.box-contact select:active,
+.box-contact textarea:focus,
+.box-contact textarea:hover,
+.box-contact textarea:active,
+.form-control:focus .form-control:hover {
+	box-shadow: 2px 2px 16px #198754;
+	border-color: #198754;
+}
+
+.card,
+.box-contact {
+	border-radius: 1%;
+}
+
+/* --- GRADIENTOWE TŁA DO SEKCJI --- */
+/* kolory z bootstrapa: bg-dark-subtle & bg-light  */
+
+.bg-gradient-down {
+	background: rgb(248, 249, 250);
+	background: linear-gradient(0deg, rgba(248, 249, 250, 1) 0%, rgba(206, 212, 218, 1) 100%);
+}
+
+.bg-gradient-up {
+	background: rgb(206, 212, 218);
+	background: linear-gradient(0deg, rgba(206, 212, 218, 1) 0%, rgba(248, 249, 250, 1) 100%);
+}
+
+.bg-gradient-up-subtle {
+	background: rgb(206, 212, 218);
+	background: linear-gradient(0deg, rgba(206, 212, 218, 1) 0%, rgba(248, 249, 250, 1) 40%);
+}
+
+/* --- HERO IMAGE --- */
+
+.hero-image {
+	position: relative;
+	min-height: 100vh;
+	background-image: url("../img/hero_mini.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hero-text {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #222;
+	text-align: center;
+	text-shadow: 2px 2px 5px #fff;
+}
+
+.hero-text h1 {
+	transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+	padding: 1rem;
+	font-size: 10rem;
+}
+
+.hero-text p {
+	--animate-delay: 0.5s;
+	--animate-duration: 1s;
+	transition: color 0.5s, box-shadow 0.5s ease-in-out;
+	padding: 1rem;
+	font-size: 4rem;
+	text-transform: lowercase;
+}
+
+.hero-text h1:hover,
+.hero-text p:hover {
+	box-shadow: 8px 8px 78px 0px rgba(255, 255, 255, 0.5);
+	color: #000;
+}
+
+.hero-text i {
+	padding: 1rem;
+	font-size: 2rem;
+}
+
+.hero-btn {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 1rem;
+	font-size: 8rem;
+	text-shadow: 2px 2px 5px #fff;
+	color: #333;
+}
+
+/* --- NAWIGACJA --- */
+
+.navbar-brand {
+	transition: color 0.5s, text-shadow 0.5s ease-in-out;
+	font-size: 2rem;
+	text-shadow: 2px 2px 5px #fff;
+	color: #000;
+}
+
+.nav-link {
+	transition: color 0.5s, text-shadow 0.5s ease-in-out;
+	font-size: 1rem;
+	text-shadow: 1px 1px 3px #fff;
+}
+
+.navbar-brand:hover,
+.nav-link:hover,
+nav .active:hover {
+	transition: text-shadow 0.5s;
+	text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
+	color: #000;
+}
+
+/* większa specyficzność, ponieważ karuzela też ma klasę active */
+nav .active {
+	transform: scale(1.2);
+	transition: transform 1.5s;
+	padding-left: 4rem;
+	text-shadow: 5px 5px 6px #fff;
+	color: #000;
+}
+
+/* --- SEKCJA O NAS --- */
+
+.aboutus {
+	min-height: 100vh;
+}
+
+.aboutus-box {
+	width: auto;
+	background-color: #fff;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.aboutus-text-highlight {
+	font-family: "Kaushan Script", cursive;
+	font-size: 1.4em;
+}
+
+.aboutus-textbox {
+	flex-direction: column;
+	font-size: 1.5em;
+}
+
+.aboutus-textbox i,
+.aboutus-text i {
+	transition: transform 0.3s ease-out;
+}
+
+.aboutus-textbox i:hover,
+.aboutus-text i:hover {
+	transform: scale(1.6);
+}
+
+.aboutus-img {
+	width: 500px;
+	min-width: 50%;
+	height: 500px;
+	background-image: url("../img/aboutus.jpg");
+	background-position: center;
+	background-size: cover;
+	object-fit: cover;
+}
+
+.aboutus-btn {
+	font-size: 1.5rem;
+}
+
+.aboutus a.btn {
+	text-shadow: 2px 2px 5px #fff;
+	color: #333;
+}
+
+.aboutus-bottom {
+	text-align: center;
+}
+
+.aboutus-bottom i {
+	font-size: 5rem;
+}
+
+/* --- SEKCJA OFERTA - KARUZELA --- */
+
+.carousel {
+	box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+	width: 100vh;
+	height: 100%;
+}
+
+.carousel-item img {
+	height: 600px;
+	background-position: center;
+	object-fit: cover;
+}
+
+.carousel-caption h5 {
+	font-family: "Kaushan Script", cursive;
+	font-size: 5rem;
+	text-shadow: 2px 2px 5px #fff;
+	color: #333;
+}
+
+.carousel-caption p {
+	font-size: 1.4rem;
+	text-shadow: 2px 2px 10px #000;
+	color: #fff;
+}
+
+.carousel-caption-shadow {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-caption-shadow2 {
+	background-color: rgb(255, 255, 255, 0.4);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	transition: transform 0.3s ease-in;
+	width: 42px;
+	height: 42px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+	transform: scale(1.6);
+}
+
+/* --- SEKCJA CENY - KARTY --- */
+
+.prices {
+	min-height: 100vh;
+}
+
+.card {
+	--animate-delay: 0.7s;
+	--animate-duration: 0.7s;
+	transition: transform 1s linear, background-image 0.5s linear !important;
+	width: 30%;
+	max-width: 500px;
+}
+
+.card:hover {
+	transform: scale(1.1);
+}
+
+.card::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 0.5s linear;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(0deg, rgba(206, 212, 218, 1) 0%, rgba(248, 249, 250, 1) 50%);
+	background-color: #fff;
+}
+
+.card:hover::before {
+	opacity: 1;
+}
+
+.card-title {
+	font-size: 3rem;
+}
+.card-text {
+	font-size: 1.4rem;
+	/* height: 6rem; */
+}
+
+.card-price {
+	transition: transform 0.5s;
+	font-size: 3rem;
+}
+
+.card-price:hover {
+	transform: scale(1.4);
+}
+.card img {
+	height: 200px;
+	object-fit: cover;
+}
+
+.card-btn {
+	font-size: 1.5rem;
+	background-color: #fff;
+}
+
+/* --- SEKCJA KONTAKT --- */
+
+.contact {
+	min-height: 80vh;
+	background-color: #fff;
+}
+
+.box-contact {
+	height: auto;
+}
+
+.box-adress p {
+	font-size: 1.6rem;
+}
+
+.contact h3 {
+	font-size: 3rem;
+	text-decoration: underline;
+}
+
+.box-form label {
+	font-size: 1.5rem;
+}
+
+.box-form input,
+.box-form select,
+.box-form textarea {
+	font-size: 1.5em;
+}
+
+.box-form textarea {
+	max-height: 14rem;
+}
+
+/* --- STOPKA ---*/
+
+.footer {
+	height: 98px;
+}
+
+.footer a {
+	font-size: 2.5rem;
+}
+
+.footer span {
+	font-size: 1rem;
+}
+
+/* --- MEDIA QUERIES --- */
+
+@media (max-width: 361px) {
+	.aboutus-text p {
+		font-size: 1.3rem;
+	}
+	.aboutus-text i {
+		font-size: 0.9rem;
+	}
+	nav .active {
+		padding-left: 1rem;
+	}
+}
+
+@media (max-width: 576px) {
+	html {
+		scroll-padding: 74px;
+	}
+	.footer {
+		height: 74px;
+	}
+
+	.hero-text h1 {
+		font-size: 5rem;
+	}
+	.hero-text p {
+		font-size: 2rem;
+	}
+	.hero-text i {
+		/* font-size: 0.5rem; */
+		display: none;
+	}
+
+	.hero-btn i {
+		font-size: 4rem;
+	}
+
+	.navbar-brand {
+		font-size: 2rem;
+	}
+
+	.nav-link {
+		font-size: 1.2rem;
+	}
+
+	.aboutus-text p {
+		font-size: 1.5rem;
+	}
+
+	p.aboutus-text-highlight {
+		font-size: 1.8rem;
+	}
+
+	.aboutus-textbox {
+		font-size: 1.5rem;
+	}
+
+	.aboutus h2,
+	.offer h2,
+	.prices h2,
+	.contact h2 {
+		font-size: 2.5rem;
+	}
+
+	.card-title {
+		font-size: 2rem;
+	}
+	.card-text {
+		/* height: 6rem; */
+		font-size: 1rem;
+	}
+
+	.card-price {
+		font-size: 2.2rem;
+	}
+
+	.box-adress p {
+		font-size: 1.3rem;
+	}
+
+	.contact h3 {
+		font-size: 2rem;
+	}
+
+	.box-form label {
+		font-size: 1.2rem;
+	}
+
+	.footer a {
+		font-size: 2rem;
+	}
+
+	nav .active {
+		padding-left: 1.5rem;
+	}
+}
+
+@media (min-width: 576px) {
+	html {
+		scroll-padding: 86px;
+	}
+	.footer {
+		height: 86px;
+	}
+	.hero-text h1 {
+		font-size: 6rem;
+	}
+	.hero-text p {
+		font-size: 2.5rem;
+	}
+	.hero-text i {
+		/* font-size: 1.5rem; */
+		display: none;
+	}
+
+	.hero-btn i {
+		font-size: 5rem;
+	}
+
+	.navbar-brand {
+		font-size: 2.5rem;
+	}
+
+	.nav-link {
+		font-size: 1.5rem;
+	}
+
+	.aboutus h2,
+	.offer h2,
+	.prices h2,
+	.contact h2 {
+		font-size: 3rem;
+	}
+
+	.box-adress p {
+		font-size: 1.7rem;
+	}
+
+	.contact h3 {
+		font-size: 2.2rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.hero-image {
+		background-image: url("../img/hero_medium.jpg");
+	}
+	.hero-text h1 {
+		font-size: 7rem;
+	}
+	.hero-text p {
+		font-size: 3rem;
+	}
+	.hero-text i {
+		display: inline;
+		font-size: 2rem;
+	}
+
+	.hero-btn {
+		top: 85%;
+	}
+
+	.hero-btn i {
+		font-size: 6rem;
+	}
+
+	.navbar-brand {
+		font-size: 2.75rem;
+	}
+
+	.nav-link {
+		font-size: 1.75rem;
+	}
+
+	.aboutus-textbox {
+		flex-direction: row;
+	}
+
+	.aboutus h2,
+	.offer h2,
+	.prices h2,
+	.contact h2 {
+		font-size: 3.5rem;
+	}
+
+	.box-adress p {
+		font-size: 2rem;
+	}
+
+	.contact h3 {
+		font-size: 2.5rem;
+	}
+
+	.aboutus-img {
+		min-width: 35%;
+	}
+
+	nav .active {
+		padding-left: 3.5rem;
+	}
+}
+
+@media (min-width: 992px) {
+	html {
+		scroll-padding: 92px;
+	}
+	.footer {
+		height: 92px;
+	}
+
+	.hero-text h1 {
+		font-size: 8rem;
+	}
+	.hero-text p {
+		font-size: 4rem;
+	}
+	.hero-text i {
+		font-size: 2.5rem;
+	}
+	.hero-btn i {
+		font-size: 6.5rem;
+	}
+
+	.navbar-brand {
+		font-size: 2.75rem;
+	}
+
+	.nav-link {
+		font-size: 1.75rem;
+	}
+
+	.aboutus h2,
+	.offer h2,
+	.prices h2,
+	.contact h2 {
+		font-size: 4rem;
+	}
+
+	.aboutus-img {
+		height: auto;
+	}
+
+	.carousel {
+		width: auto;
+		height: 100%;
+	}
+
+	.box-adress p {
+		font-size: 1.3rem;
+	}
+
+	.contact h3 {
+		font-size: 2rem;
+	}
+
+	.card {
+		width: 50%;
+	}
+
+	.aboutus-text-highlight {
+		font-size: 1.25em;
+	}
+}
+
+@media (min-width: 1200px) {
+	.card {
+		width: 30%;
+	}
+	.aboutus-text-highlight {
+		font-size: 1.4em;
+	}
+}
+
+@media (max-width: 992px) {
+	.carousel {
+		margin: 0px;
+		width: 100%;
+		padding: 0px;
+	}
+	.card {
+		min-width: 60%;
+		max-width: 70%;
+	}
+}
+
+@media (max-width: 776px) {
+	.card {
+		min-width: 75%;
+		max-width: 90%;
+	}
+}
+
+@media (min-width: 1200px) {
+	html {
+		scroll-padding: 98px;
+	}
+	.footer {
+		height: 98px;
+	}
+	.hero-text h1 {
+		font-size: 10rem;
+	}
+	.hero-text p {
+		font-size: 5rem;
+	}
+	.hero-text i {
+		font-size: 3rem;
+	}
+	.hero-btn i {
+		font-size: 8rem;
+	}
+
+	.navbar-brand {
+		font-size: 3rem;
+	}
+
+	.nav-link {
+		font-size: 2rem;
+	}
+
+	.box-adress p {
+		font-size: 1.5rem;
+	}
+
+	.contact h3 {
+		font-size: 2.5rem;
+	}
+
+	.footer a {
+		font-size: 3rem;
+	}
+	.footer span {
+		font-size: 1.5rem;
+	}
+}
+
+@media (min-width: 1400px) {
+	.box-adress p {
+		font-size: 1.8rem;
+	}
+
+	.contact h3 {
+		font-size: 3rem;
+	}
+
+	.aboutus p.aboutus-text-highlight {
+		font-size: 2.1rem;
+	}
+
+	.aboutus-text p {
+		font-size: 1.1em;
+	}
+
+	.aboutus h2,
+	.offer h2,
+	.prices h2,
+	.contact h2 {
+		font-size: 4.5rem;
+	}
+}
